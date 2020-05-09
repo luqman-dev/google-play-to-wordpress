@@ -1,0 +1,13 @@
+{
+    "apps": {
+        "port": 1234
+    },
+    "wordpress": {
+        "endpoint": "https://luqman.web.id/",
+        "username": "user",
+        "password": "password123"
+    },
+    "playstore": {
+        "devId": "Developer Id"
+    }
+}

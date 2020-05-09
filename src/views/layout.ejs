@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('header.ejs') %>
+</head>
+
+<body class="bg-light">
+    <main role="main" class="container">
+        <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-purple rounded box-shadow">
+            <img class="mr-3" src="/img/google_play.png" alt="" width="48" height="48">
+            <img class="mr-3" src="/img/wordpress.png" alt="" width="48" height="48">
+            <div class="lh-100">
+                <h6 class="mb-0 text-white lh-100">Google Play to Wordpress</h6>
+                <small>Automatically Post Apps from Google Play to Wordpress</small>
+            </div>
+        </div>
+
+        <%- content %>
+
+    </main>
+
+    <%- include('footer.ejs') %>
+</body>
+
+</html>
