@@ -5,7 +5,6 @@ const express = require('express'),
     expressLayouts = require('express-ejs-layouts')
 
 var app = express()
-var port = process.env.PORT || 9000
 
 // Set template engine
 app.set('view engine', 'ejs')
@@ -18,5 +17,6 @@ app.use('/', require('./routes/web.routes'))
 app.use('/', require('./routes/api.routes'))
 
 // Set port
-app.listen(port)
-console.log(`Live on port ${global.gConfig.apps.port}`)
+app.listen(global.gConfig.apps.port, global.gConfig.apps.ipAddress, function () {
+    console.log(`Live on ip address ${global.gConfig.apps.ipAddress} port ${global.gConfig.apps.port}`)
+})
